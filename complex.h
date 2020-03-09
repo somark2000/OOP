@@ -7,13 +7,13 @@ private:
 	double real, imaginar;
 public:
 	//constructor
-	Complex();
+	Complex(double a, double b);
 
 	//return imaginar
-	double show_imaginar();
+	double show_imaginar() const;
 
 	//return real
-	double show_real();
+	double show_real() const;
 
 	//add
 	Complex operator+ (Complex z);
@@ -24,7 +24,11 @@ public:
 	//quot
 	Complex operator/ (Complex z);
 
+	//abs
+	double abs() const;
 
+	//polar form
+	void compute_polar() const;
 
 	//destructor
 	~Complex();
